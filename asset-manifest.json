@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/MERN-chat/static/css/main.255dc8fa.chunk.css",
+    "main.js": "/MERN-chat/static/js/main.fdf79c84.chunk.js",
+    "main.js.map": "/MERN-chat/static/js/main.fdf79c84.chunk.js.map",
+    "runtime-main.js": "/MERN-chat/static/js/runtime-main.d99a127d.js",
+    "runtime-main.js.map": "/MERN-chat/static/js/runtime-main.d99a127d.js.map",
+    "static/js/2.0a2ae294.chunk.js": "/MERN-chat/static/js/2.0a2ae294.chunk.js",
+    "static/js/2.0a2ae294.chunk.js.map": "/MERN-chat/static/js/2.0a2ae294.chunk.js.map",
+    "index.html": "/MERN-chat/index.html",
+    "static/css/main.255dc8fa.chunk.css.map": "/MERN-chat/static/css/main.255dc8fa.chunk.css.map",
+    "static/js/2.0a2ae294.chunk.js.LICENSE.txt": "/MERN-chat/static/js/2.0a2ae294.chunk.js.LICENSE.txt",
+    "static/media/ChosenRoomDecoration.module.scss": "/MERN-chat/static/media/person.eb93e57d.png",
+    "static/media/decorations.module.scss": "/MERN-chat/static/media/planet3.be76e474.png",
+    "static/media/RoomModal.module.scss": "/MERN-chat/static/media/new_room.0c668695.png",
+    "static/media/Modal.module.scss": "/MERN-chat/static/media/modalEmoji.611fb7bd.png",
+    "static/media/ChatMenu.module.scss": "/MERN-chat/static/media/logout.cadd8c56.svg",
+    "static/media/Room.module.scss": "/MERN-chat/static/media/send.6bf4d1a4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d99a127d.js",
+    "static/js/2.0a2ae294.chunk.js",
+    "static/css/main.255dc8fa.chunk.css",
+    "static/js/main.fdf79c84.chunk.js"
+  ]
+}
