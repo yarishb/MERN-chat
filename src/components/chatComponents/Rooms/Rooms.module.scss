@@ -1,0 +1,42 @@
+@import '../../../utils/breakpoints/breakpoints.scss';
+@import '../../../utils/scss/variables';
+
+.menuRoom {
+  position: relative;
+  z-index: 8;
+  background: transparent;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid $menu-bg;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}
+
+.roomName {
+  margin-left: 0.5rem;
+  margin-top: 0.7rem;
+  font-size: 15px;
+}
+
+.lastMessage {
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
+  font-size: 14px;
+  color: rgba(#351f39, 0.7)
+}
+
+.timeBox {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  .time {
+    color: rgba(black, 0.7);
+    font-size: 12px;
+  }
+}

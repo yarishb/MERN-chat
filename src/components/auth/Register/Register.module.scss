@@ -1,0 +1,19 @@
+@import '../../../utils/breakpoints/breakpoints.scss';
+@import '../../../utils/scss/variables';
+
+.form {	
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+	@include media ('>=phone') {
+		margin-left: 2rem
+	}
+	@include media ('>=largeDesktop') {
+		margin-left: 30%;	
+		margin-top: -1rem;
+	}
+	@include media ('>=tablet', '<=desktop') {
+		margin-left: 10%;
+		margin-top: -2rem;
+	}
+}

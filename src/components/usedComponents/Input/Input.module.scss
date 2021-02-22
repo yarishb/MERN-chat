@@ -1,0 +1,40 @@
+@import '../../../utils/breakpoints/breakpoints.scss';
+@import '../../../utils/scss/variables';
+
+.field { 
+	position: relative;
+	@include media ('>=phone') {
+		margin-top: 1.5rem;
+	}
+	margin-top: 0.4rem;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 240px;
+	@include media ('>=phonePlus') {
+		width: 300px;
+		margin-top: 1rem;
+	}
+
+	background: #fff;
+	color: $input-text-color;
+	font: inherit;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);		
+	border: 0;
+	outline: 0;
+	padding: 18px 14px;
+	@include media ('>=largeDesktop') {
+		margin-top: 1rem;
+		width: 390px;
+		padding: 22px 18px;
+	}
+
+	@include media ('>=desktop', "<=largeDesktop") {
+		width: 353px;	
+	}
+
+	@include media ('>=tablet', '<desktop') {	
+		margin-top: 1rem;
+		width: 343px;
+		padding: 22px 18px;
+	}
+}
