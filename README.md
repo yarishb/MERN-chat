@@ -2,7 +2,9 @@
 <h3> Hey, my name is Bohdan and I'm web developer. </h3>
 
 <p> This app is an online chat with rooms and messages saving. <br/>
-    I've also done a few other features that you can test.</p>
+    I've also done a few other features that you can test!</p>
+    
+App is here: https://yarishb.github.io/MERN-chat/
     
 
 
