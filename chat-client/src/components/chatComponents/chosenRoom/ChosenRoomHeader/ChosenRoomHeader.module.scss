@@ -1,0 +1,60 @@
+@import '../../../../utils/breakpoints/breakpoints.scss';
+@import '../../../../utils/scss/variables';
+
+.roomHeader {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid $menu-bg;
+    @include media ('>=smallPhone', '<=tablet') {
+      background-color: #fff;
+      .roomHeaderClose {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.2rem;
+        font-size: 25px;
+
+      }
+    }
+
+    @include media ('>phonePlus') {
+      .roomHeaderClose {
+        display: none;
+      }
+    }
+    .roomHeaderContent {
+      margin-top: 0.5rem;
+      margin-left: 3rem;
+      .roomMembers{
+        font-weight: 300;
+      }
+      .roomHeaderName {
+        font-size: 25px;
+      }
+      
+      @include media ('>=smallPhone', '<=tablet') {
+        margin-top: 0.7rem;
+        margin-left: 4rem;
+        .roomHeaderName {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .leaveButton {
+      cursor: pointer;
+      margin-top: 0.9rem;
+      position: absolute;
+      right: 2rem;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      font-size: 18px;
+      background: #ec4646;
+      color: white;
+      @include media ('>=smallPhone', '<=tablet') {
+        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+        right: 1rem;
+      }
+    }
+  }

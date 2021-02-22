@@ -1,0 +1,113 @@
+@import '../../../utils/breakpoints/breakpoints.scss';
+@import '../../../utils/scss/variables';
+
+
+.fullPage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(grey, 0.3);
+}
+
+.modalWindow {
+	z-index: 10;
+	position: absolute;
+	width: 750px;
+	height: 350px;
+	background-color: rgba(white, 0.97);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	-webkit-animation: slide 1s forwards;
+  	animation: slide 0.5s forwards;
+	top: -30rem;
+	 @include media ('>=smallPhone', '<=phonePlus') {
+    	width: 17rem;
+    	text-align: center;
+  	}
+  	@include media ('>=tablet') {
+	    .modalImage {
+			margin-top: 3rem;
+			background-image: url('../../../images/lock.png');
+			background-repeat: no-repeat;
+			width: 15rem;
+		}
+		.modalEmoji {
+			margin-top: 5rem;
+			margin-left: 4rem;
+			background-image: url('../../../images/modalEmoji.png'); 
+			width: 13rem;
+		}
+  	}
+
+	.modalText {
+		margin-top: 2rem;
+		letter-spacing: 1px;
+		.modalHeader {
+			font-size: 22px;
+			font-weight:400;
+		}
+		.modalTitle {
+			margin-left: 0.1rem;
+			margin-top: 0.4rem;
+			font-size: 13px;
+			font-weight:200;
+			color: grey;
+		}
+		.modalInput {
+			margin-top: 1rem;
+			width: 6rem;
+			height: 3rem;
+			font-size: 30px;
+			text-align: center;
+			background-color: rgba(grey, 0.3);
+			border: 0;
+		}
+		.modalInput::placeholder {
+			color: rgba(white, 0.7);
+		}
+	}
+	
+	@-webkit-keyframes slide {
+	  100% { top: 10rem; }
+	}
+
+	@keyframes slide {
+	  100% { top: 10rem; }
+	}
+
+	.modalStaticContent {
+		position: absolute;
+		bottom: 1rem;
+		display: flex;
+		flex-direction: row;
+		right: 1.5rem;
+
+		@include media ('>=smallPhone', '<=phonePlus') {
+			right: 1rem;
+		} 
+		.modalDot {
+			margin-top: 1.7rem;
+			margin-right: 7rem;
+			transition: 0.3s;
+			width: 8px;
+			height: 8px;
+			background-color: grey;
+			border-radius: 100%;
+			background-color: grey;
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.7); 
+			-moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.7); 
+			box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.7);
+		}
+
+		.modalDotActive {
+			background-color: rgba($button-bg, 0.7);
+			-webkit-box-shadow: 0px 0px 8px 0px rgba(253, 155, 71, 0.7); 
+			-moz-box-shadow: 0px 0px 8px 0px rgba(253, 155, 71, 0.7); 
+			box-shadow: 0px 0px 8px 0px rgba(253, 155, 71, 0.7);
+		}
+	}
+}
+
+

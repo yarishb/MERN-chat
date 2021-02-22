@@ -1,0 +1,105 @@
+@import '../../../utils/breakpoints/breakpoints.scss';
+@import '../../../utils/scss/variables';
+
+.menu {
+  .chatMenu {
+    position: absolute;
+    width: 23%;
+    height: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    background: rgba($menu-bg, 0.7);
+    z-index: 3;
+    @include media ('>=smallPhone', '<=tablet') {
+      width: 100%;
+    }
+
+    .helloName {
+      height: 4rem;
+      width: 100%;
+      border-bottom: 2px solid $menu-bg;
+
+      :first-child {
+        transform: translateY(70%);
+        margin-left: 1rem;
+        font-size: 23px;
+        color: rgba(black, 0.6);
+      }
+      
+      .logout {
+        cursor: pointer;
+        position: absolute;
+        background-image: url('../../../images/logout.svg');
+        width: 2rem;
+        height: 2rem;
+        right: 1rem;
+        top: 1rem;
+      }
+    }
+
+    .roomManipulators {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .roomManipulatorsButton {
+        z-index: 3;
+        cursor: pointer;
+        position: relative;
+        width: 50%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $menu-bg;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: rgba(black, 0.3);
+        font-weight: 700;
+
+        :hover {
+          transition: .4s;
+          color: rgba(black, 0.4);
+        }
+
+        .plus {
+          margin-right: 0.5rem;
+        }
+      }
+
+      .firstButton {
+        .hoverFirst {
+          position: absolute;
+          z-index: 2;
+          left: -10rem;
+          width: 100%;
+          background-color: black;
+        }
+
+        border-right: 1px solid $menu-bg;
+      }
+
+      .secondButton {
+        border-left: 1px solid $menu-bg;
+
+        :first-child {
+          padding-top: 1px;
+        }
+      }
+    }
+
+    .roomsStyles {
+      display: flex;
+      flex-direction: column;
+
+      .noRooms {
+        text-align: center;
+        margin-top: 0.7rem;
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(black, 0.7);
+      }
+    }
+  }
+}

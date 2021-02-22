@@ -1,0 +1,120 @@
+@import '../../../../utils/breakpoints/breakpoints.scss';
+@import '../../../../utils/scss/variables';
+
+* {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.decoration {
+  margin-top: 10%;
+  margin-left: 23%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include media('>=smallPhone', '<=tablet') {
+    display: none;
+  }
+
+  .bg {
+    position: absolute;
+    width: 40rem;
+    height: 30rem;
+    background-image: url('../../../../images/chatDecoration/bg.png');
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    @include media ('>=largeDesktop') {
+      width: 50rem;
+    }
+  }
+  .person {
+    position: absolute;
+    top: 15rem;
+    right: 35rem;
+    width: 11rem;
+    height: 30rem;
+    @include media ('>=largeDesktop') {
+      top: 20rem;
+      right: 50rem;
+      width: 17rem;
+    }
+    background-image: url('../../../../images/chatDecoration/person.png');
+  }
+  .firstMessage {
+    position: absolute;
+    right: 23rem;
+    @include media('>=largeDesktop') {
+      margin-top: 5rem;
+      right: 35rem;
+    }
+    .messageBg1 {
+      z-index: 2;
+      width: 11rem;
+      height: 7rem;
+      background-image: url('../../../../images/chatDecoration/message1.png');
+    }
+    .message {
+      z-index: 3;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 9rem;
+      height: 4rem;
+      background-image: url('../../../../images/chatDecoration/message.png');
+    }
+  }
+}
+.secondMessage {
+  margin-top: 7rem;
+  margin-left: 22rem;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  @include media('>=largeDesktop') {
+    margin-left: 15rem;
+    margin-top: 13rem;
+  }
+  .messageBg2 {
+    z-index: 2;
+    width: 11rem;
+    height: 7rem;
+    background-image: url('../../../../images/chatDecoration/message2.png');
+  }
+
+  .message2 {
+    z-index: 3;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 9rem;
+    height: 4rem;
+    background-image: url('../../../../images/chatDecoration/messageSmall.png');
+  }
+}
+
+.thirdMessage {
+  margin-top: 13rem;
+  margin-left: 5rem;
+  position: absolute;
+  @include media ('>=largeDesktop') {
+    margin-top: 20rem;
+  }
+  .messageBg3 {
+    z-index: 2;
+    width: 11rem;
+    height: 7.5rem;
+    background-image: url('../../../../images/chatDecoration/message3.png');
+  }
+
+  .message3{
+    z-index: 3;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 9rem;
+    height: 4rem;
+    background-image: url('../../../../images/chatDecoration/bigMessage.png');
+  }
+}

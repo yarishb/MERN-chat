@@ -1,0 +1,61 @@
+@import '../../../../utils/breakpoints/breakpoints.scss';
+@import '../../../../utils/scss/variables';
+
+.Room {
+  position: absolute;
+  width: 77%;
+  left: 23%;
+  z-index: 5;
+  @include media ('>=smallPhone', '<=tablet') {
+    width: 100%;
+    left: 0;
+  }
+  .RoomInputBox {
+    position: relative;
+    .RoomInputBottom {
+      position: fixed;
+      bottom: 0;
+      width: 77%;
+      @include media ('>=smallPhone', '<=tablet') {
+        width: 100%;
+      }
+      .RoomInput {
+        position: relative;
+        border: 0;
+        outline: 0;
+        border-top: 1px solid $menu-bg;
+        width: 100%;
+        height: 3rem;
+        padding-left: 1rem;
+        font-size: 19px;
+        }
+      }
+    .sendMessage {
+      cursor: pointer;
+      position: absolute;
+      z-index: 10;
+      background-image: url('../../../../images/send.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 1.5rem;
+      top: 0.7rem;
+    }
+  }
+  .messages {
+    width: 100%;
+    height: 85%;
+    @include media (">=largeDesktop") {
+      height: 90%;
+    }
+    @include media ('>=smallPhone', '<=tablet') {
+      background-color: #fff;
+      height: 80%;
+    }
+    position: fixed;
+    margin-top: 4rem;
+    overflow-y: auto;
+    margin-bottom: 10rem;
+  }
+}
